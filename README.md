@@ -4,6 +4,7 @@ Master-Detail UITableView with a FetchedResultsController using the Realm Databa
 # Setup
 
 ```
+cd RealmTableTest
 pod install
 ```
 
