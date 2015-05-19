@@ -1,0 +1,16 @@
+PODS:
+  - RBQFetchedResultsController (1.8.4):
+    - Realm
+  - Realm (0.92.3):
+    - Realm/Headers (= 0.92.3)
+  - Realm/Headers (0.92.3)
+
+DEPENDENCIES:
+  - RBQFetchedResultsController
+  - Realm
+
+SPEC CHECKSUMS:
+  RBQFetchedResultsController: 6f24267e61817e809e7aba654fac88a06700eb42
+  Realm: bf604805d5e897850da488260f93889f510924b3
+
+COCOAPODS: 0.36.0
