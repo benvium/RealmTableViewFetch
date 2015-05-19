@@ -51,10 +51,6 @@
 
 #pragma mark - UI EVENTS
 
-- (IBAction)editTapped:(id)sender {
-    self.tableView.editing = !self.tableView.editing;
-}
-
 - (IBAction)addTapped:(id)sender {
 
     Item *item = [[Item alloc] init];

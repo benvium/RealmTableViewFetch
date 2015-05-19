@@ -40,11 +40,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="GSL-dG-ggW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="hIl-QW-z3s">
-                            <connections>
-                                <action selector="editTapped:" destination="XBE-AL-q0Q" id="WnK-AC-smy"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fMj-Ir-OE5">
                             <connections>
                                 <action selector="addTapped:" destination="XBE-AL-q0Q" id="RPB-Bt-wba"/>

@@ -100,6 +100,15 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SubItem *subItem = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    subItem.count += 50;
+    [[RBQRealmChangeLogger defaultLogger] didChangeObject:subItem];
+    [realm commitWriteTransaction];
+}
+
 - (void)deleteObjectAtIndexPath:(NSIndexPath *)path {
     Item *item = [self.fetchedResultsController objectAtIndexPath:path];
     RLMRealm *realm = [RLMRealm defaultRealm];
